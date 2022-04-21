@@ -1,0 +1,32 @@
+header{
+    background-color: #f7d4b8;
+    p {
+        a{
+            display: flex;
+            justify-content: center;
+            font-family: "beau rivage";
+            text-decoration: none;
+            text-shadow: 2px 2px whitesmoke;
+            color: black;
+            font-size:7rem;
+            padding: 25px 0px 25px 0px;
+            animation-name: logo;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            &:hover{
+                color: black;
+                transform: scale(105%,105%);
+            }
+        }
+    }
+}
+ @keyframes logo{
+     0% {color:black;}
+     25% {color:darkslategray;}
+     50%{color:black;}
+     75%{color:darkslategray;}
+     100%{color:black;}
+ }   
+    

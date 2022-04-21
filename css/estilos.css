@@ -1,0 +1,11 @@
+* {
+  margin: 0 px;
+  padding: 0px; }
+
+html {
+  font-size: 62.5%; }
+
+header {
+  background-image: url(../imagenes/villalasrosas-rueda.jpg);
+  display: flex;
+  justify-content: center; }

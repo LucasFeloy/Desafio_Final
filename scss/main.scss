@@ -1,0 +1,235 @@
+main {
+    background-color:#c1cbd8 ;
+}
+
+nav {
+    background-color: #f2edd4;
+    padding: 15px;
+    border-bottom: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style-type: none;
+
+        li {
+            a {
+                text-decoration: none;
+                list-style-type: none;
+                padding: 50px;
+                font-family: "league spartan";
+                font-size: 3.2rem;
+                color: darkslateblue;
+                font-weight: 500;
+
+                &:hover {
+                    color: darkslategrey;
+
+                }
+            }
+        }
+    }
+}
+
+
+$parrafos:(
+    fuente:"nautigal",
+    estilo:italic,
+    tamaño:2.8rem,
+    color:black,
+    alineacion:center,
+);
+
+/*INDEX*/
+
+.mainIndex {
+    .parrIndex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+
+        p {
+            font-family: map-get($parrafos, fuente);
+            font-style: map-get($parrafos, estilo);
+            font-size: map-get($parrafos, tamaño);
+            color: map-get($parrafos, color);
+            text-align: map-get($parrafos, alineacion);
+
+        }
+    }
+
+    .imgIndex {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-template-rows: 3fr 3fr;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        justify-content: center;
+        align-items: center;
+        padding:30px 15px 30px 15px;
+
+        .img1 {
+            width: 100%;
+            height: 100%;
+            border:2px solid black;
+        }
+        .img4 {
+            width: 100%;
+            height: 100%;
+            border:2px solid black;
+        }
+        .img5 {
+            width: 100%;
+            height: 100%;
+            border:2px solid black;
+        }
+        .img6 {
+            width: 100%;
+            height: 100%;
+            border:2px solid black;
+        }
+    }
+}
+
+/*SERVICIOS*/
+
+.mainServicios {
+    font-family: map-get($parrafos, fuente);
+    font-style: map-get($parrafos, estilo);
+    font-size: map-get($parrafos, tamaño);
+    color: map-get($parrafos, color);
+    padding: 0px 0px 25px 20px;
+
+    h2 {
+        font-style: normal;
+        color: midnightblue;
+        font-size: 3rem;
+        text-decoration: underline;
+        font-weight: bold;
+        padding: 25px 0px 25px 0px;
+    }
+
+    a {
+        text-decoration: none;
+        color: darkslateblue;
+        font-weight: bold;
+
+        p {
+            &:hover {
+                color: darkslategrey;
+
+            }
+        }
+    }
+}
+
+/*GALERIA*/
+
+.mainGaleria {
+    h2 {
+        font-style: normal;
+        color: midnightblue;
+        font-size: 3rem;
+        text-decoration: underline;
+        font-weight: bold;
+        text-align: center;
+        padding: 25px 0px 25px 0px;
+    }
+
+    .imgCab {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 25px 20px 25px 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+        }
+
+    }
+
+}
+
+/*UBICACION*/
+
+.mainUbicacion {
+    display: flex;
+
+
+    div {
+        p {
+            font-family: map-get($parrafos, fuente);
+            font-style: map-get($parrafos, estilo);
+            font-size: map-get($parrafos, tamaño);
+            color: map-get($parrafos, color);
+            text-align: map-get($parrafos, alineacion);
+            padding: 30px 0px 30px 0px;
+        }
+    }
+
+    div {
+        iframe {
+            display: flex;
+            align-content: center;
+            border: 2px solid black;
+            padding-bottom: 30px;
+        }
+
+    }
+}
+
+/*CONTACTO*/
+
+.mainContacto {
+    padding: 25px 0px 25px 15px;
+
+    label {
+        font-family: map-get($parrafos, fuente);
+        font-style: map-get($parrafos, estilo);
+        font-size: map-get($parrafos, tamaño);
+        color: map-get($parrafos, color);
+        padding: 10px;
+
+    }
+
+    .form1 {
+        padding: 20px;
+
+        .nombre {
+            padding: 10px;
+            font-size: 2rem;
+            color: black;
+            font-family: "league spartan";
+            
+            &:focus {
+                background-color: mintcream;
+            }
+        }
+        .enviar{
+                      
+            padding: 10px;
+            font-weight: 600;
+            font-size:1rem;
+        }
+
+        textarea {
+            font-size: 2rem;
+            color: black;
+            font-family: "league spartan";
+
+            &:focus {
+                background-color: mintcream;
+            }
+        }
+    }
+
+   
+}
+
