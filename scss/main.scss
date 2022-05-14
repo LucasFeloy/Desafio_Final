@@ -1,12 +1,12 @@
 main {
-    background-color:#c1cbd8 ;
+    background: linear-gradient(to top left, lightgray, whitesmoke);
 }
 
 nav {
     background-color: #f2edd4;
     padding: 15px;
-    border-bottom: 2px solid whitesmoke;
-    border-top: 2px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+    border-top: 3px solid whitesmoke;
 
     ul {
         display: flex;
@@ -23,6 +23,7 @@ nav {
                 font-size: 3.2rem;
                 color: darkslateblue;
                 font-weight: 500;
+                text-shadow: whitesmoke;
 
                 &:hover {
                     color: darkslategrey;
@@ -34,8 +35,7 @@ nav {
 }
 
 
-$parrafos:(
-    fuente:"nautigal",
+$parrafos:(fuente:"nautigal",
     estilo:italic,
     tamaño:2.8rem,
     color:black,
@@ -49,7 +49,8 @@ $parrafos:(
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 15px;
+
+        padding: 50px 75px 0px 75px;
 
         p {
             font-family: map-get($parrafos, fuente);
@@ -58,38 +59,105 @@ $parrafos:(
             color: map-get($parrafos, color);
             text-align: map-get($parrafos, alineacion);
 
+            span {
+                font-weight: bold;
+            }
         }
     }
 
     .imgIndex {
+
         display: grid;
-        grid-template-columns: 3fr 3fr;
-        grid-template-rows: 3fr 3fr;
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
-        justify-content: center;
-        align-items: center;
-        padding:30px 15px 30px 15px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "imagen8 imagen8 imagen6 imagen4"
+            "imagen8 imagen8 imagen1 imagen9"
+        ;
+        padding: 100px 75px 150px 75px;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+
+
 
         .img1 {
             width: 100%;
             height: 100%;
-            border:2px solid black;
+            border: 2px solid black;
+            grid-area: imagen1;
+            border-radius: 10px;
         }
+
+        .img2 {
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+            grid-area: imagen2;
+            border-radius: 10px;
+        }
+
+        .img3 {
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+            grid-area: imagen3;
+            border-radius: 10px;
+        }
+
         .img4 {
             width: 100%;
             height: 100%;
-            border:2px solid black;
+            border: 2px solid black;
+            grid-area: imagen4;
+            border-radius: 10px;
         }
+
         .img5 {
             width: 100%;
             height: 100%;
-            border:2px solid black;
+            border: 2px solid black;
+            grid-area: imagen5;
+            border-radius: 10px;
         }
+
         .img6 {
             width: 100%;
             height: 100%;
-            border:2px solid black;
+            border: 2px solid black;
+            grid-area: imagen6;
+            border-radius: 10px;
+        }
+
+        .img7 {
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+            grid-area: imagen7;
+            border-radius: 10px;
+        }
+
+        .img8 {
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+            grid-area: imagen8;
+            border-radius: 10px;
+        }
+
+        .img9 {
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+            grid-area: imagen9;
+            border-radius: 10px;
+        }
+
+        .img10 {
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+            grid-area: imagen10;
+            border-radius: 10px;
         }
     }
 }
@@ -101,15 +169,28 @@ $parrafos:(
     font-style: map-get($parrafos, estilo);
     font-size: map-get($parrafos, tamaño);
     color: map-get($parrafos, color);
-    padding: 0px 0px 25px 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    span{
+        font-weight: bold;
+    }
+    ul {
+        li {
+            list-style: none;
+        }
+    }
 
     h2 {
+        font-family: "league spartan";
         font-style: normal;
         color: midnightblue;
         font-size: 3rem;
-        text-decoration: underline;
+        text-decoration: none;
         font-weight: bold;
         padding: 25px 0px 25px 0px;
+        text-align: center;
+
     }
 
     a {
@@ -117,9 +198,18 @@ $parrafos:(
         color: darkslateblue;
         font-weight: bold;
 
-        p {
+
+        button {
+            color: black;
+            font-family: "league spartan";
+            font-weight: 600;
+            font-size: 2rem;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding:5px;
+            background-color: darkgray;
             &:hover {
-                color: darkslategrey;
+                color: darkslateblue;
 
             }
         }
@@ -130,56 +220,79 @@ $parrafos:(
 
 .mainGaleria {
     h2 {
+        font-family: "cairo";
         font-style: normal;
         color: midnightblue;
         font-size: 3rem;
-        text-decoration: underline;
+        text-decoration: none;
         font-weight: bold;
         text-align: center;
-        padding: 25px 0px 25px 0px;
+        padding: 50px 0px 25px 0px;
     }
 
-    .imgCab {
+    .imgCab1 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 15px;
         justify-content: center;
-        padding: 25px 20px 25px 20px;
+        padding: 20px 15px 50px 30px;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    }
+
+    .imgCab2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 20px 30px 50px 15px;
 
         img {
             width: 100%;
             height: 100%;
             border: 2px solid black;
+            border-radius: 10px;
         }
-
     }
-
 }
+
+
 
 /*UBICACION*/
 
 .mainUbicacion {
     display: flex;
 
-
     div {
+        span {
+            font-weight: bold;
+        }
+
         p {
             font-family: map-get($parrafos, fuente);
             font-style: map-get($parrafos, estilo);
             font-size: map-get($parrafos, tamaño);
             color: map-get($parrafos, color);
             text-align: map-get($parrafos, alineacion);
-            padding: 30px 0px 30px 0px;
+            padding: 50px;
         }
+
     }
 
     div {
         iframe {
-            display: flex;
-            align-content: center;
+            margin: 0 auto;
+            display: block;
             border: 2px solid black;
-            padding-bottom: 30px;
+            padding-bottom: 50px;
+            border-radius: 20px;
         }
 
     }
@@ -188,48 +301,81 @@ $parrafos:(
 /*CONTACTO*/
 
 .mainContacto {
-    padding: 25px 0px 25px 15px;
-
-    label {
+    p {
         font-family: map-get($parrafos, fuente);
         font-style: map-get($parrafos, estilo);
         font-size: map-get($parrafos, tamaño);
         color: map-get($parrafos, color);
-        padding: 10px;
+        text-align: map-get($parrafos, alineacion);
+        padding: 30px;
 
+        span {
+            font-weight: bold;
+        }
+
+        .emoji {
+            font-style: normal;
+        }
     }
 
-    .form1 {
-        padding: 20px;
+    .mail {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        font-size: 2.5rem;
+        font-family: "cairo";
+        input{
+           border: 2px solid black; 
+           border-radius: 10px;
+           text-align: center;    
+        }
+    }
 
-        .nombre {
-            padding: 10px;
-            font-size: 2rem;
+    .consulta {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        padding-top: 50px;
+        padding-bottom: 25px;
+        font-family: "cairo";
+        textarea{
+            border: 2px solid black; 
+            border-radius: 10px;    
+         }
+    }
+
+    .envio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 50px;
+        input{
             color: black;
             font-family: "league spartan";
-            
-            &:focus {
-                background-color: mintcream;
-            }
-        }
-        .enviar{
-                      
-            padding: 10px;
+            font-size: 2rem;
             font-weight: 600;
-            font-size:1rem;
-        }
-
-        textarea {
-            font-size: 2rem;
-            color: black;
-            font-family: "league spartan";
-
-            &:focus {
-                background-color: mintcream;
+            border: 1px solid black;
+            padding:5px;
+            background-color: darkgray;
+            &:hover{
+                color: darkslateblue;
             }
+            
         }
+
     }
 
-   
-}
+    .comentario {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        padding-bottom: 25px;
+        textarea{
+            border: 2px solid black; 
+            border-radius: 10px;    
+         }
+    }
 
+}

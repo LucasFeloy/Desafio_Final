@@ -1,5 +1,7 @@
 header{
-    background-color: #f7d4b8;
+   /*background-color:/* #f7d4b8 lightgray;*/
+   background: linear-gradient(to bottom left ,whitesmoke,#f7d4b8);
+  
     p {
         a{
             display: flex;
@@ -24,9 +26,9 @@ header{
 }
  @keyframes logo{
      0% {color:black;}
-     25% {color:darkslategray;}
+     25% {color:rgb(2, 2, 77);}
      50%{color:black;}
-     75%{color:darkslategray;}
+     75%{color:rgb(2, 2, 77);}
      100%{color:black;}
  }   
     

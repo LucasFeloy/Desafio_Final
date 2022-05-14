@@ -6,7 +6,8 @@ html {
   font-size: 62.5%; }
 
 header {
-  background-color: #f7d4b8; }
+  /*background-color:/* #f7d4b8 lightgray;*/
+  background: linear-gradient(to bottom left, whitesmoke, #f7d4b8); }
   header p a {
     display: flex;
     justify-content: center;
@@ -29,22 +30,22 @@ header {
   0% {
     color: black; }
   25% {
-    color: darkslategray; }
+    color: #02024d; }
   50% {
     color: black; }
   75% {
-    color: darkslategray; }
+    color: #02024d; }
   100% {
     color: black; } }
 
 main {
-  background-color: #c1cbd8; }
+  background: linear-gradient(to top left, lightgray, whitesmoke); }
 
 nav {
   background-color: #f2edd4;
   padding: 15px;
-  border-bottom: 2px solid whitesmoke;
-  border-top: 2px solid whitesmoke; }
+  border-bottom: 3px solid whitesmoke;
+  border-top: 3px solid whitesmoke; }
   nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +58,8 @@ nav {
       font-family: "league spartan";
       font-size: 3.2rem;
       color: darkslateblue;
-      font-weight: 500; }
+      font-weight: 500;
+      text-shadow: whitesmoke; }
       nav ul li a:hover {
         color: darkslategrey; }
 
@@ -66,39 +68,84 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px; }
+  padding: 50px 75px 0px 75px; }
   .mainIndex .parrIndex p {
     font-family: "nautigal";
     font-style: italic;
     font-size: 2.8rem;
     color: black;
     text-align: center; }
+    .mainIndex .parrIndex p span {
+      font-weight: bold; }
 
 .mainIndex .imgIndex {
   display: grid;
-  grid-template-columns: 3fr 3fr;
-  grid-template-rows: 3fr 3fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 15px 30px 15px; }
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "imagen8 imagen8 imagen6 imagen4" "imagen8 imagen8 imagen1 imagen9";
+  padding: 100px 75px 150px 75px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px; }
   .mainIndex .imgIndex .img1 {
     width: 100%;
     height: 100%;
-    border: 2px solid black; }
+    border: 2px solid black;
+    grid-area: imagen1;
+    border-radius: 10px; }
+  .mainIndex .imgIndex .img2 {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    grid-area: imagen2;
+    border-radius: 10px; }
+  .mainIndex .imgIndex .img3 {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    grid-area: imagen3;
+    border-radius: 10px; }
   .mainIndex .imgIndex .img4 {
     width: 100%;
     height: 100%;
-    border: 2px solid black; }
+    border: 2px solid black;
+    grid-area: imagen4;
+    border-radius: 10px; }
   .mainIndex .imgIndex .img5 {
     width: 100%;
     height: 100%;
-    border: 2px solid black; }
+    border: 2px solid black;
+    grid-area: imagen5;
+    border-radius: 10px; }
   .mainIndex .imgIndex .img6 {
     width: 100%;
     height: 100%;
-    border: 2px solid black; }
+    border: 2px solid black;
+    grid-area: imagen6;
+    border-radius: 10px; }
+  .mainIndex .imgIndex .img7 {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    grid-area: imagen7;
+    border-radius: 10px; }
+  .mainIndex .imgIndex .img8 {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    grid-area: imagen8;
+    border-radius: 10px; }
+  .mainIndex .imgIndex .img9 {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    grid-area: imagen9;
+    border-radius: 10px; }
+  .mainIndex .imgIndex .img10 {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    grid-area: imagen10;
+    border-radius: 10px; }
 
 /*SERVICIOS*/
 .mainServicios {
@@ -106,101 +153,172 @@ nav {
   font-style: italic;
   font-size: 2.8rem;
   color: black;
-  padding: 0px 0px 25px 20px; }
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center; }
+  .mainServicios span {
+    font-weight: bold; }
+  .mainServicios ul li {
+    list-style: none; }
   .mainServicios h2 {
+    font-family: "league spartan";
     font-style: normal;
     color: midnightblue;
     font-size: 3rem;
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: bold;
-    padding: 25px 0px 25px 0px; }
+    padding: 25px 0px 25px 0px;
+    text-align: center; }
   .mainServicios a {
     text-decoration: none;
     color: darkslateblue;
     font-weight: bold; }
-    .mainServicios a p:hover {
-      color: darkslategrey; }
+    .mainServicios a button {
+      color: black;
+      font-family: "league spartan";
+      font-weight: 600;
+      font-size: 2rem;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 5px;
+      background-color: darkgray; }
+      .mainServicios a button:hover {
+        color: darkslateblue; }
 
 /*GALERIA*/
 .mainGaleria h2 {
+  font-family: "cairo";
   font-style: normal;
   color: midnightblue;
   font-size: 3rem;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: bold;
   text-align: center;
-  padding: 25px 0px 25px 0px; }
+  padding: 50px 0px 25px 0px; }
 
-.mainGaleria .imgCab {
+.mainGaleria .imgCab1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
-  padding: 25px 20px 25px 20px; }
-  .mainGaleria .imgCab img {
+  padding: 20px 15px 50px 30px; }
+  .mainGaleria .imgCab1 img {
     width: 100%;
     height: 100%;
-    border: 2px solid black; }
+    border: 2px solid black;
+    border-radius: 10px; }
+
+.mainGaleria .imgCab2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px 30px 50px 15px; }
+  .mainGaleria .imgCab2 img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 10px; }
 
 /*UBICACION*/
 .mainUbicacion {
   display: flex; }
+  .mainUbicacion div span {
+    font-weight: bold; }
   .mainUbicacion div p {
     font-family: "nautigal";
     font-style: italic;
     font-size: 2.8rem;
     color: black;
     text-align: center;
-    padding: 30px 0px 30px 0px; }
+    padding: 50px; }
   .mainUbicacion div iframe {
-    display: flex;
-    align-content: center;
+    margin: 0 auto;
+    display: block;
     border: 2px solid black;
-    padding-bottom: 30px; }
+    padding-bottom: 50px;
+    border-radius: 20px; }
 
 /*CONTACTO*/
-.mainContacto {
-  padding: 25px 0px 25px 15px; }
-  .mainContacto label {
-    font-family: "nautigal";
-    font-style: italic;
-    font-size: 2.8rem;
+.mainContacto p {
+  font-family: "nautigal";
+  font-style: italic;
+  font-size: 2.8rem;
+  color: black;
+  text-align: center;
+  padding: 30px; }
+  .mainContacto p span {
+    font-weight: bold; }
+  .mainContacto p .emoji {
+    font-style: normal; }
+
+.mainContacto .mail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  font-size: 2.5rem;
+  font-family: "cairo"; }
+  .mainContacto .mail input {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center; }
+
+.mainContacto .consulta {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  font-family: "cairo"; }
+  .mainContacto .consulta textarea {
+    border: 2px solid black;
+    border-radius: 10px; }
+
+.mainContacto .envio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 50px; }
+  .mainContacto .envio input {
     color: black;
-    padding: 10px; }
-  .mainContacto .form1 {
-    padding: 20px; }
-    .mainContacto .form1 .nombre {
-      padding: 10px;
-      font-size: 2rem;
-      color: black;
-      font-family: "league spartan"; }
-      .mainContacto .form1 .nombre:focus {
-        background-color: mintcream; }
-    .mainContacto .form1 .enviar {
-      padding: 10px;
-      font-weight: 600;
-      font-size: 1rem; }
-    .mainContacto .form1 textarea {
-      font-size: 2rem;
-      color: black;
-      font-family: "league spartan"; }
-      .mainContacto .form1 textarea:focus {
-        background-color: mintcream; }
+    font-family: "league spartan";
+    font-size: 2rem;
+    font-weight: 600;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: darkgray; }
+    .mainContacto .envio input:hover {
+      color: darkslateblue; }
+
+.mainContacto .comentario {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  padding-bottom: 25px; }
+  .mainContacto .comentario textarea {
+    border: 2px solid black;
+    border-radius: 10px; }
 
 footer {
-  background-color: #f2edd4;
+  background: linear-gradient(#f2edd4, whitesmoke);
   padding: 25px 0px 25px 15px;
-  border-top: 2px solid whitesmoke; }
+  border-top: 3px solid whitesmoke; }
   footer .wp img {
     width: 3%;
     height: 3%; }
+  footer .wp a {
+    text-decoration: none; }
   footer .wp p {
     font-family: "league spartan";
     font-size: 3rem;
     color: darkslateblue;
     font-weight: 500;
-    font-style: italic; }
+    font-style: italic;
+    font-weight: bold; }
   footer .mail img {
     width: 3%;
     height: 3%; }
@@ -210,7 +328,8 @@ footer {
     color: darkslateblue;
     font-weight: 500;
     text-decoration: none;
-    font-style: italic; }
+    font-style: italic;
+    font-weight: bold; }
     footer .mail a:hover {
       color: darkslategray; }
 
@@ -232,11 +351,7 @@ footer {
   .mainGaleria h2 {
     font-size: 2.4rem; }
   .mainUbicacion p {
-    font-size: 2.2rem !important; }
-  .mainContacto .form1 textarea {
-    width: 75%; }
-  .mainContacto .form1 label {
-    font-size: 2.2rem; } }
+    font-size: 2.2rem !important; } }
 
 @media (max-width: 992px) {
   nav ul {

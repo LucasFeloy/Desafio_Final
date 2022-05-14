@@ -18,6 +18,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=League+Spartan:wght@100;200;300;400;500;600;700&family=The+Nautigal&family=Whisper&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="../estilos/estilos.css">
     <title>Cabaña Las Rosas-Contacto</title>
@@ -37,33 +41,49 @@
     </nav>
 
     <main class="row mainContacto ">
-        <div class="col-1"></div>
-        <div class="col-xs-10 form1">
-            <form>
-                <label for="nombre_apellido">Nombre y Apellido</label>
-                <input class="nombre" type="text" name="nombre_apellido" style="width:25%;height:30px">
-                <br>
-                <label for="E-mail">E-mail</label>
-                <input class="nombre" type="text" name="e-mail"style="width:25%;height:30px">
-                <br>
-                <label for="consulta">Escribinos tu consulta</label><br>
-                <textarea cols="50px" rows="15px"></textarea><br>
-                <br>
-                <input class="enviar"type="submit" value="Enviar" >
-                <input class="enviar"type="reset" value="Borrar" >
-            </form>
+        <div>
+            <p>No dudes en consultarnos por disponibilidad y precios,<span>¡Te esperamos!</span></p>
         </div>
-        <div class="col-xs-10 form1">
-            <form>
-            <label for="opinion">Si ya nos conocés, dejanos tu comentario/opinión para mejorar nuestro
-             servicio</label><br>
-            <textarea cols="50px" rows="15px"></textarea><br>
-            <br>
-            <input class="enviar"type="submit" value="Enviar">
-            <input class="enviar"type="reset" value="Borrar">
-            </form>
+        <form action="">
+            <div class="mail">
+
+                <input type="text" name="nombre y apellido" placeholder="Nombre y apellido">
+                <input type="text" name="email" placeholder="E-mail">
+
+            </div>
+            <div class="consulta">
+
+                <textarea name="" id="" cols="50" rows="15"></textarea>
+
+            </div>
+            <div class="envio">
+
+                <input type="submit" class="btn btn-primary" value="Enviar">
+
+
+                <input type="reset" class="btn btn-primary" value="Borrar">
+
+            </div>
+        </form>
+
+        <div>
+            <p>Si ya nos conocés, dejanos tu comentario <span class="emoji">&#128521</span></p>
         </div>
-        <div class="col-1"></div>
+        <form action="">
+            <div class="comentario">
+
+                <textarea name="" id="" cols="50" rows="15"></textarea>
+
+            </div>
+            <div class="envio">
+
+                <input type="submit" class="btn btn-primary" value="Enviar">
+
+                <input type="reset" class="btn btn-primary" value="Borrar">
+
+            </div>
+        </form>
+
 
 
 
@@ -74,13 +94,15 @@
         <div class="wp">
             <div><img src="../imagenes/redes/logo-wp.png"></div>
             <div>
-                <p>1525258585</p>
+                <a href="https://wa.me/152528585?text=¡Hola+quisiera+información!">
+                    <p>011-1525258585</p>
+                </a>
             </div>
         </div>
         <div class="mail">
             <div><img src="../imagenes/redes/logo-email.png"></div>
             <div>
-                <a href="contacto.html">
+                <a href="mailto:cabañaslasrosas@gmail.com">
                     <p>cabañaslasrosas@gmail.com</p>
                 </a>
             </div>

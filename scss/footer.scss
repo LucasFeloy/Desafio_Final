@@ -1,11 +1,17 @@
 footer {
-    background-color: #f2edd4;
+    
+    background: linear-gradient(#f2edd4,whitesmoke);
     padding: 25px 0px 25px 15px;
-    border-top: 2px solid whitesmoke;
+    border-top: 3px solid whitesmoke;
+  
     .wp {
+       
         img {
             width: 3%;
             height: 3%;
+        }
+        a{
+            text-decoration: none;
         }
 
         p {
@@ -14,10 +20,14 @@ footer {
             color:darkslateblue;
             font-weight: 500;
             font-style: italic;
+            font-weight: bold;
+            
+            
         }
     }
 
     .mail {
+        
         img {
             width: 3%;
             height: 3%;
@@ -30,9 +40,14 @@ footer {
             font-weight: 500;
             text-decoration: none;
             font-style: italic;
+            font-weight: bold;
+            
             &:hover{
                 color:darkslategray;
             }
+        
         }
+  
+              
     }
 }
